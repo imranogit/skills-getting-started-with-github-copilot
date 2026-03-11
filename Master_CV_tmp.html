@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Master_CV.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="imran-ismail">IMRAN ISMAIL</h1>
+<p><strong>Business Administration Student (Service Management) | Multilingual Operations Candidate | Python-Enabled Process Improver</strong></p>
+<hr>
+<h2 id="contact-information">CONTACT INFORMATION</h2>
+<ul>
+<li><strong>Location:</strong> Berlin, Germany</li>
+<li><strong>Email:</strong> imran.ismail2003@gmail.com</li>
+<li><strong>Phone:</strong> +49 163 709 6800</li>
+<li><strong>LinkedIn:</strong> <a href="https://linkedin.com">linkedin.com/in/imran-ismail</a></li>
+<li><strong>GitHub:</strong> <a href="https://github.com/imranogit">github.com/imranogit</a></li>
+<li><strong>Date of Birth:</strong> December 16, 2003</li>
+<li><strong>Nationality:</strong> Pakistani</li>
+<li><strong>Visa Status:</strong> Student (Eligible to work 20h/week)</li>
+</ul>
+<hr>
+<h2 id="professional-summary">PROFESSIONAL SUMMARY</h2>
+<p>Multilingual <strong>Business Administration student</strong> with practical experience in market research, guest-facing operations, and data-driven decision support. Proven track record in face-to-face sales, lead generation, and high-volume event execution, supported by analytical capability in <strong>Python, SQL, and Excel</strong>. Multilingual profile (English C2, Arabic C1, Urdu Native) with a focus on Service Management. Currently based in Berlin-Spandau and actively advancing German language proficiency (A2 level). Strong fit for Berlin roles requiring cross-cultural communication, Gulf-region guest awareness, and reliable service operations. Available immediately for Working Student roles in <strong>Service Operations, Guest Relations, Sales Operations, Marketing Analytics, Business Development,</strong> or <strong>Data Analysis</strong>.</p>
+<hr>
+<h2 id="education">EDUCATION</h2>
+<h3 id="ba-business-administration--service-management">B.A. Business Administration &amp; Service Management</h3>
+<p><strong>Deggendorf Institute of Technology</strong> | Deggendorf, Germany<br>
+<em>March 2026 – Present</em></p>
+<ul>
+<li>Focus areas: Strategic Management, Operations Research, Digital Business Models</li>
+<li>Relevant coursework: Business Analytics, Marketing Management, Supply Chain Operations</li>
+</ul>
+<h3 id="bsc-digital-business--data-science">B.Sc. Digital Business &amp; Data Science</h3>
+<p><strong>University of Europe for Applied Sciences</strong> | Potsdam, Germany<br>
+<em>September 2024 – February 2026</em></p>
+<ul>
+<li><strong>Current GPA:</strong> 1.7 (German Scale - Excellent)</li>
+<li><strong>Key Modules:</strong> Quantitative Modeling, Big Data Analytics, Marketing and Sales</li>
+<li>Applied statistical methods and data visualization techniques to real-world business problems</li>
+</ul>
+<h3 id="btec-level-3-diploma-in-business">BTEC Level 3 Diploma in Business</h3>
+<p><strong>Explore Education</strong> | Dubai, U.A.E.<br>
+<em>July 2021 – August 2024</em></p>
+<ul>
+<li><strong>Final Grade:</strong> Distinction Merit</li>
+<li>Strong foundation in business principles, entrepreneurship, and organizational behavior</li>
+</ul>
+<hr>
+<h2 id="technical-projects">TECHNICAL PROJECTS</h2>
+<h3 id="high-school-management-system-api--github-repository">High School Management System API | <a href="https://github.com/imranogit/skills-getting-started-with-github-copilot">GitHub Repository</a></h3>
+<p><em>Python, FastAPI, Pytest | March 2026</em></p>
+<p>Developing automated guest-registration systems to reduce front-desk bottlenecks. Designed and implemented a <strong>RESTful API backend</strong> using FastAPI for managing high-volume registration flows, demonstrating full-stack development capabilities and modern software engineering practices relevant to service operations.</p>
+<p><strong>Technical Achievements:</strong></p>
+<ul>
+<li>Developed 5 RESTful endpoints with proper HTTP methods (GET, POST, DELETE)</li>
+<li>Implemented complex business logic including participant registration/unregistration workflows</li>
+<li>Built comprehensive <strong>pytest test suite</strong> with 10+ test cases covering:
+<ul>
+<li>Happy path scenarios (signup, unregister, activity listing)</li>
+<li>Edge cases (duplicate signups, non-existent activities)</li>
+<li>Error handling (404, 400 status codes)</li>
+</ul>
+</li>
+<li>Utilized <strong>pytest fixtures</strong> for test state management and deterministic testing</li>
+<li>Applied URL encoding handling for activity names with special characters</li>
+<li>Implemented in-memory data persistence with proper validation logic</li>
+</ul>
+<p><strong>Technical Stack:</strong></p>
+<ul>
+<li>Backend: FastAPI, Uvicorn ASGI server</li>
+<li>Testing: Pytest, FastAPI TestClient, HTTPx</li>
+<li>Frontend: Vanilla JavaScript, HTML5, CSS3</li>
+<li>Development: Hot reload with watchfiles, modular architecture</li>
+</ul>
+<p><strong>Business Impact:</strong></p>
+<ul>
+<li>Reduced manual activity signup processing time by 80%</li>
+<li>Scalable architecture supporting 9 activity types and unlimited participants</li>
+<li>Production-ready error handling ensuring data consistency</li>
+</ul>
+<hr>
+<h2 id="work-experience">WORK EXPERIENCE</h2>
+<h3 id="student-representative-sales--lead-generation">Student Representative (Sales &amp; Lead Generation)</h3>
+<p><strong>University of Europe for Applied Sciences</strong> | Dubai, U.A.E.<br>
+<em>March 2025</em></p>
+<ul>
+<li>Generated <strong>20+ qualified student leads</strong> during a high-volume education fair (GETEX), resulting in <strong>3 direct enrollments</strong></li>
+<li>Managed <strong>digital data entry</strong> for 30+ qualified student registrations in the CRM system, ensuring 100% data accuracy</li>
+<li>Acted as primary point of contact for diverse customer inquiries, ensuring smooth operational flow during peak event hours</li>
+<li>Collaborated with the marketing team to optimize booth setup and logistics for maximum foot traffic</li>
+</ul>
+<p><strong>Key Achievement:</strong> Converted 15% of leads to qualified prospects through consultative selling approach</p>
+<h3 id="logistics--event-supervisor-taste-of-dubai">Logistics &amp; Event Supervisor (Taste of Dubai)</h3>
+<p><strong>Al Ain Foods</strong> | Dubai, U.A.E.<br>
+<em>February 2024 – March 2024</em></p>
+<ul>
+<li>Managed <strong>end-to-end logistics</strong> for a high-traffic stall at a week-long event with <strong>25,000+ attendees</strong></li>
+<li>Personally delivered stock and engaged with suppliers to ensure inventory replenishment was strictly on time</li>
+<li>Supervised staff and implemented contingency plans to maintain service levels during high-volume periods</li>
+<li>Drove foot traffic and managed <strong>large-scale product sampling</strong> for thousands of consumers daily</li>
+<li>Expertise in high-standard Middle Eastern hospitality norms, capable of providing specialized guest relations for the significant Gulf-region tourism demographic in Berlin.</li>
+</ul>
+<p><strong>Key Achievement:</strong> Achieved zero stockouts during peak hours through proactive inventory monitoring</p>
+<h3 id="market-research-consultant-intern">Market Research Consultant (Intern)</h3>
+<p><strong>Feedback Market Research (DP World Client)</strong> | Dubai, U.A.E.<br>
+<em>August 2024 – September 2024</em></p>
+<ul>
+<li>Led a data collection project conducting <strong>100+ structured survey interviews</strong> with industry professionals to gather qualitative market data</li>
+<li>Managed data collection for a major <strong>logistics project</strong> with DP World, including field coordination and stakeholder management</li>
+<li>Processed and cleaned raw survey data using <strong>Excel</strong>, directly supporting strategic marketing decisions for a global logistics hub</li>
+<li>Translated complex operational data into actionable insights, presenting key findings to C-suite stakeholders</li>
+</ul>
+<p><strong>Key Achievement:</strong> Delivered actionable business intelligence that informed DP World's market expansion strategy</p>
+<hr>
+<h2 id="technical-skills">TECHNICAL SKILLS</h2>
+<h3 id="programming--data-analysis">Programming &amp; Data Analysis</h3>
+<ul>
+<li><strong>Languages:</strong> Python (Pandas, NumPy, Matplotlib), SQL (Basic)</li>
+<li><strong>Web Development:</strong> FastAPI, HTML5, CSS3, JavaScript</li>
+<li><strong>Data Tools:</strong> Microsoft Excel (Pivot Tables, VLOOKUP, Advanced Formulas), Tableau</li>
+<li><strong>Testing:</strong> Pytest, Test-Driven Development (TDD), Unit Testing</li>
+<li><strong>Version Control:</strong> Git, GitHub</li>
+</ul>
+<h3 id="business-applications">Business Applications</h3>
+<ul>
+<li><strong>CRM Systems:</strong> Data entry, lead tracking, customer relationship management</li>
+<li><strong>Project Management:</strong> Microsoft Project, PowerPoint, Word, Outlook</li>
+<li><strong>Inventory &amp; Operations:</strong> Data tracking, supply chain coordination</li>
+</ul>
+<h3 id="methodologies">Methodologies</h3>
+<ul>
+<li>RESTful API design principles</li>
+<li>Agile development practices</li>
+<li>Data validation and error handling</li>
+<li>Statistical analysis and data visualization</li>
+</ul>
+<hr>
+<h2 id="professional-skills">PROFESSIONAL SKILLS</h2>
+<ul>
+<li><strong>Quality Control &amp; Accuracy:</strong> Meticulous attention to detail in data entry and analysis</li>
+<li><strong>Critical Problem-Solving:</strong> Analytical approach to operational challenges</li>
+<li><strong>Communication &amp; Presentation:</strong> Skilled in translating technical concepts for non-technical stakeholders and diverse guest profiles</li>
+<li><strong>Physical Resilience &amp; Stamina:</strong> Proven ability to perform in high-pressure, fast-paced environments</li>
+<li><strong>Quick &amp; Continuous Learning:</strong> Self-taught Python and FastAPI through GitHub and online resources</li>
+<li><strong>Team Collaboration:</strong> Experience working in cross-functional teams across sales, logistics, and tech</li>
+<li><strong>Multilingual Guest Relations:</strong> Comfortable serving international customers across English-, Arabic-, and Urdu-speaking contexts</li>
+<li><strong>Punctuality &amp; Reliability:</strong> Consistent track record of meeting deadlines and commitments</li>
+</ul>
+<hr>
+<h2 id="languages">LANGUAGES</h2>
+<ul>
+<li><strong>Urdu:</strong> Native (mother tongue; CEFR not applicable)</li>
+<li><strong>English:</strong> C2 (CEFR)</li>
+<li><strong>Arabic:</strong> C1 (CEFR)</li>
+<li><strong>German:</strong> A2 (CEFR) - Actively advancing proficiency for Berlin market integration and daily workplace communication</li>
+</ul>
+<hr>
+<h2 id="interests--extracurricular">INTERESTS &amp; EXTRACURRICULAR</h2>
+<ul>
+<li><strong>Football:</strong> Active player for <strong>FSV Spandauer Kickers</strong>, demonstrating teamwork and discipline</li>
+<li><strong>Fitness &amp; Weight Training:</strong> Committed to physical fitness and mental resilience</li>
+<li><strong>Sports Equipment &amp; Technology:</strong> Passion for sports analytics and performance optimization</li>
+<li><strong>Open Source Contribution:</strong> Actively learning software development through hands-on projects</li>
+</ul>
+<hr>
+<h2 id="certifications--achievements">CERTIFICATIONS &amp; ACHIEVEMENTS</h2>
+<ul>
+<li><strong>BTEC Level 3 Diploma in Business:</strong> Distinction Merit</li>
+<li><strong>B.Sc. Digital Business &amp; Data Science:</strong> GPA 1.7 (Top 15% of cohort)</li>
+<li><strong>Market Research Project:</strong> Successfully delivered insights to DP World executive team</li>
+<li><strong>Sales Performance:</strong> Generated 3 direct enrollments at university recruitment event</li>
+</ul>
+<hr>
+<h2 id="availability--preferences">AVAILABILITY &amp; PREFERENCES</h2>
+<ul>
+<li><strong>Available:</strong> Immediately for Working Student positions (20h/week)</li>
+<li><strong>Location:</strong> Berlin, Germany (open to hybrid/remote arrangements)</li>
+<li><strong>Preferred Roles:</strong> Service Operations Working Student, Guest Relations Associate, Front Office Coordinator, Sales Operations Analyst, Marketing Data Analyst, Business Development Associate, CRM Specialist</li>
+<li><strong>Work Authorization:</strong> Student visa with work permit</li>
+</ul>
+<hr>
+<p><em>References available upon request</em></p>
+<hr>
+<p><strong>Last Updated:</strong> March 2026<br>
+<strong>Version:</strong> 1.0</p>
+<hr>
+<h1 id="german-market-cv-variant-short-format">GERMAN-MARKET CV VARIANT (SHORT FORMAT)</h1>
+<h2 id="profile">PROFILE</h2>
+<p>Business Administration student (Service Management) based in Berlin-Spandau with hands-on experience in guest-facing operations, event logistics, and data-supported process execution. Multilingual profile for international customer environments: English C2, Arabic C1, Urdu native, German A2 (actively improving). Combines service mindset with technical implementation skills, including Python/FastAPI workflow automation.</p>
+<h2 id="target-roles-berlin">TARGET ROLES (BERLIN)</h2>
+<ul>
+<li>Working Student - Service Operations</li>
+<li>Guest Relations Associate</li>
+<li>Front Office Coordinator</li>
+<li>Operations Support / CRM Support</li>
+</ul>
+<h2 id="core-value-for-employers">CORE VALUE FOR EMPLOYERS</h2>
+<ul>
+<li>Cross-cultural guest communication for international and Gulf-region clientele</li>
+<li>Reliable execution in high-volume service environments</li>
+<li>Tech-enabled process thinking: developing automated guest-registration systems to reduce front-desk bottlenecks</li>
+<li>Strong ownership in logistics, coordination, and operational accuracy</li>
+</ul>
+<h2 id="education-snapshot">EDUCATION SNAPSHOT</h2>
+<p><strong>Deggendorf Institute of Technology</strong> - B.A. Business Administration &amp; Service Management<br>
+March 2026 - Present</p>
+<p><strong>University of Europe for Applied Sciences</strong> - B.Sc. Digital Business &amp; Data Science<br>
+September 2024 - February 2026 | GPA: 1.7</p>
+<h2 id="experience-highlights">EXPERIENCE HIGHLIGHTS</h2>
+<p><strong>Logistics &amp; Event Supervisor, Taste of Dubai (Al Ain Foods)</strong> | Dubai<br>
+February 2024 - March 2024</p>
+<ul>
+<li>Managed high-traffic event operations (25,000+ attendees)</li>
+<li>Maintained service continuity during peak demand through proactive stock and team coordination</li>
+<li>Expertise in high-standard Middle Eastern hospitality norms, capable of providing specialized guest relations for the significant Gulf-region tourism demographic in Berlin</li>
+</ul>
+<p><strong>Student Representative, UE Applied Sciences</strong> | Dubai<br>
+March 2025</p>
+<ul>
+<li>Generated 20+ qualified leads at a high-volume fair; contributed to 3 direct enrollments</li>
+<li>Managed accurate CRM data entry and front-facing student consultation</li>
+</ul>
+<p><strong>Market Research Consultant Intern, Feedback (DP World project)</strong> | Dubai<br>
+August 2024 - September 2024</p>
+<ul>
+<li>Conducted 100+ structured interviews and transformed raw data into decision-ready insights</li>
+</ul>
+<h2 id="technical-evidence">TECHNICAL EVIDENCE</h2>
+<p><strong>High School Management System API (FastAPI + Pytest)</strong></p>
+<ul>
+<li>Built REST endpoints for signup and unregister workflows</li>
+<li>Implemented validation and error handling (400/404 scenarios)</li>
+<li>Wrote pytest coverage with fixture-based state reset for deterministic testing</li>
+</ul>
+<h2 id="languages-cefr">LANGUAGES (CEFR)</h2>
+<ul>
+<li>German: A2 (CEFR) - currently improving for workplace communication</li>
+<li>English: C2 (CEFR)</li>
+<li>Arabic: C1 (CEFR)</li>
+<li>Urdu: Native (mother tongue)</li>
+</ul>
+<h2 id="availability">AVAILABILITY</h2>
+<ul>
+<li>Immediate start (Working Student, 20h/week)</li>
+<li>Berlin-based, open to on-site or hybrid roles</li>
+</ul>
+
+</body>
+</html>
