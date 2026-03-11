@@ -1,14 +1,3 @@
-<style>
-  body { font-family: 'Arial', sans-serif; line-height: 1.4; color: #333; }
-  h1 { text-align: center; color: #000; text-transform: uppercase; margin-bottom: 5px; }
-  h2 { border-bottom: 2px solid #444; padding-bottom: 3px; margin-top: 20px; color: #222; text-transform: uppercase; font-size: 1.2em; }
-  h3 { margin-bottom: 2px; font-size: 1.1em; color: #444; }
-  ul { margin-top: 5px; }
-  li { margin-bottom: 3px; }
-  .contact-info { text-align: center; margin-bottom: 20px; font-size: 0.9em; }
-  @page { margin: 1.5cm; }
-</style>
-
 # IMRAN ISMAIL
 
 **Working Student | Hospitality, Guest Service and Operations**
