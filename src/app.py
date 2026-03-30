@@ -78,6 +78,18 @@ activities = {
         "schedule": "Tuesdays, 3:30 PM - 5:00 PM",
         "max_participants": 14,
         "participants": ["isabella@mergington.edu"]
+    },
+    "Math Study Group": {
+        "description": "Collaborative study of mathematical analysis including calculus, linear algebra, and quantitative methods for business and economics",
+        "schedule": "Mondays and Wednesdays, 3:30 PM - 5:00 PM",
+        "max_participants": 20,
+        "participants": ["ethan@mergington.edu", "mia@mergington.edu"]
+    },
+    "Statistics Study Group": {
+        "description": "Explore probability, descriptive and inferential statistics, and data analysis techniques used in business and social sciences",
+        "schedule": "Tuesdays and Thursdays, 3:30 PM - 5:00 PM",
+        "max_participants": 20,
+        "participants": ["aiden@mergington.edu", "chloe@mergington.edu"]
     }
 }
 
