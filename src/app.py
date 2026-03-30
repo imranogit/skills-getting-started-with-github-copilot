@@ -78,6 +78,18 @@ activities = {
         "schedule": "Tuesdays, 3:30 PM - 5:00 PM",
         "max_participants": 14,
         "participants": ["isabella@mergington.edu"]
+    },
+    "Mathematics Study Group": {
+        "description": "Collaborative study sessions covering mathematical analysis, algebra, calculus, and problem-solving techniques for business and economics applications",
+        "schedule": "Mondays and Wednesdays, 3:30 PM - 5:00 PM",
+        "max_participants": 20,
+        "participants": ["ethan@mergington.edu", "mia@mergington.edu"]
+    },
+    "Statistics Workshop": {
+        "description": "Hands-on workshop exploring statistical methods, data analysis, and probability theory with real-world applications",
+        "schedule": "Thursdays, 3:30 PM - 5:00 PM",
+        "max_participants": 18,
+        "participants": ["aiden@mergington.edu"]
     }
 }
 
